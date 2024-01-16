@@ -1,17 +1,24 @@
+.section_logo {
+  width: 100%;
+  background-color: $white;
+  height: 250px
+}
+
 .logo {
   @include verticalCenter;
-  margin: 5px auto;
-  width: 200px;
+  margin: auto;
+  width: 90%;
+  height: 225px;
   border-radius: 20px;
-  padding: 5px 0;
+  padding: auto;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.307);
-  background: url(../../assets/img/main.jpg) center/cover;
+  background: url(../../assets/img/Falaise.png) center/cover;
+  margin-top: 100px;
 
-  img {
-    height: 40px;
-  }
   h3 {
     margin-left: 10px;
-    color: $color-1;
+    color: $white;
+    font-size: 50px;
+
   }
 }

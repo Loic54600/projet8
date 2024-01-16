@@ -1,0 +1,13 @@
+footer {
+    @include verticalCenter;
+    background-color: $color-3;
+    width: 100%;
+    height: 225px;
+    position:absolute;
+    bottom:0 auto;  /* on le colle en bas */
+}
+
+h3 {
+    margin-left: 10px;
+    color: $white;
+  }

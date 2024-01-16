@@ -1,0 +1,20 @@
+.gallery {
+    width: 100%;
+    background-color: $white;
+    padding-bottom: 30px;
+
+    .gallery_cards {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $color-2;
+    color: $white;
+    border-radius: 20px;
+    margin-top: 30px;
+}

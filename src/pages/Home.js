@@ -1,16 +1,22 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 import Logo from '../components/Logo';
+import Gallery from '../components/Gallery';
 
 
 const Home = () => {
     return (
-        <div>
-            <Logo />
+
+        <body>
             <Navigation />
-            <h1>Accueil</h1>
-        </div>
+            <Logo />
+            <Gallery />
+            <Footer />
+        </body>
+
     );
+
 };
 
 export default Home;

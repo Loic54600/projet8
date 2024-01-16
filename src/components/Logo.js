@@ -2,9 +2,11 @@ import React from 'react';
 
 const Logo = () => {
     return (
-        <div className='logo'>
-            <img src='' alt='logo react' />
-        </div>
+        <section class="section_logo">
+            <div className="logo"> 
+                <h3>Chez vous, partout et ailleurs</h3>
+            </div>
+        </section>
     );
 };
 

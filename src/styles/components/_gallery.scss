@@ -1,0 +1,53 @@
+.gallery {
+    width: 100%;
+    background-color: $white;
+    padding-bottom: 30px;
+
+    .gallery_cards {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    grid-template-rows: repeat(3, 340px);
+    grid-gap: 0px 30px;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: $grey;
+    margin-top: 30;
+    height: 710px;
+
+    .grid-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: $color-2;
+        color: $white;
+        border-radius: 20px;
+        margin-top: 30px;
+
+
+    }
+}
+
+/* Mobile 
+@media only screen and (width <= 750px) {
+    .gallery {
+          display: flex;
+          justify-content: center;
+          background: none;
+          padding: 0;
+          border-radius: 15px;
+          gap: 15px;
+    }
+
+}
+
+@media only screen and (width <= 480px) {
+    .card__image {
+          height: 250px;
+    }
+}*/

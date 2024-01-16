@@ -1,10 +1,9 @@
-
-$font-1: "font-1", sans-serif;
-
 $color-1: #61dafb;
 $color-2: salmon;
-$color-3: #282c34;
+$color-3: black;
+$color-4:var(--red);;
 $white: rgb(255, 255, 255);
+$grey : rgba(231, 229, 229, 0.952);
 
 @mixin verticalCenter {
   display: flex;
@@ -12,17 +11,12 @@ $white: rgb(255, 255, 255);
   align-items: center;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
   background: $white;
-  font-family: $font-1;
-  // @include verticalCenter;
+  margin: 0;
+
 }
+
 li {
   list-style-type: none;
 }
