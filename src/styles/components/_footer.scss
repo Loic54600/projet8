@@ -1,5 +1,7 @@
 footer {
     @include verticalCenter;
+    display: flex;
+    flex-direction: column;
     background-color: $color-3;
     width: 100%;
     height: 225px;
@@ -10,4 +12,8 @@ footer {
 h3 {
     margin-left: 10px;
     color: $white;
-  }
+}
+
+img.kasafooter {
+    margin-bottom: 15px;
+}

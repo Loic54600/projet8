@@ -1,4 +1,5 @@
 import React from 'react';
+import logements from "../datas/logement.json";
 
 const Gallery = () => {
     return (
@@ -7,11 +8,8 @@ const Gallery = () => {
                 <section>
                     <div class="grid">
                         <div class="grid-item">Titre de la location</div>
-                        <div class="grid-item">Titre de la location</div>
-                        <div class="grid-item">Titre de la location</div>
-                        <div class="grid-item">Titre de la location</div>
-                        <div class="grid-item">Titre de la location</div>
-                        <div class="grid-item">Titre de la location</div>
+                        
+                   
 
                     </div>
                 </section>

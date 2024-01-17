@@ -1,13 +1,15 @@
 import React from 'react';
+import Kasa from "../assets/img/kasa.png";
 import { NavLink } from 'react-router-dom';
 
 
 const Navigation = () => {
     return ( 
         <nav className='navbar'>
-            <NavLink>
-                <img src="../assets/img/kasa.png"/>
-            </NavLink>
+            <div class="img.kasa">
+                <img  className="kasa" src={Kasa}/>
+            </div>
+            {/*Navigation*/ }
             <NavLink to="/">
                 <div>Accueil</div>
             </NavLink>
