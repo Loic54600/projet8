@@ -9,16 +9,29 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+  margin-bottom: 30px;
   width: 90%;
   height: 220px;
   border-radius: 20px;
   box-shadow: 0 5px 3px rgba(0, 0, 0, 0.307);
-  background: url(../../assets/img/Falaise.png) center/cover;
+  background: url(../../assets/img/Falaise.png) center/cover ;
 
   h3 {
-    margin-left: 10px;
-    color: $white;
-    font-size: 50px;
-    font-family: "Montserrat", sans-serif;
+  margin-left: 10px;
+  color: $white;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  }
+  
+}
+
+
+
+@media only screen and (width <= 768px) {
+    .logo {
+      @include verticalCenter;
+      background: url(../../assets/img/Falaise.png) center/cover;
   }
 }
+     
+

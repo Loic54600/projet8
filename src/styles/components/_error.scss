@@ -1,0 +1,40 @@
+section.error  {
+    height: 700px;
+}
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:$white ;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .h2-404 {
+        color: $color-2;
+        font-size: 36px;
+    }
+}
+
+.back {
+    font-size: 15px;
+    text-decoration: none;
+    color: $color-2;
+    text-decoration: underline;
+    margin-top: 50px;
+}
+    
+div.back:hover {
+    text-decoration: underline;
+}
+div.back.active {
+text-decoration: underline;
+}
+
+
+@media only screen and (width <= 768px) {
+    .error .h2-404 {
+        font-size: 25px;
+    }
+}

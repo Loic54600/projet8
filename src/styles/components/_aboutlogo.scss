@@ -1,0 +1,13 @@
+.aboutlogo {
+    @include verticalCenter;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+    height: 220px;
+    border-radius: 20px;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.307);
+    background: url(../../assets/img/mobile-about-background.png) center/cover;
+    
+}

@@ -1,18 +1,22 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
-import Logo from '../components/Logo';
-import Menu from '../components/Menu';
+import Aboutlogo from '../components/Aboutlogo';
+import Aboutmenu from '../components/Aboutmenu';
 import Footer from '../components/Footer';
+
+
 
 
 
 
 const About = () => {
     return (
-        <div>
+        <div className="abouthome">
             <Navigation />
-            <Logo />
-            <Menu />
+            <main>
+                <Aboutlogo />
+                <Aboutmenu />
+            </main>
             <Footer />
         </div>
     );

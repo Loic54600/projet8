@@ -1,0 +1,31 @@
+.banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 470px;
+	position: relative;
+}
+
+.banner-img {
+    display: flex;
+    width: 1240px;
+    height: 650px;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.banner .arrow {
+	position: absolute;
+    cursor: pointer;
+}
+.banner .arrow_left {
+	left: 375px;
+    
+}
+.banner .arrow_right {
+	right: 375px;
+}

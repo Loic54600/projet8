@@ -5,17 +5,22 @@ import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
     return ( 
-        <nav className='navbar'>
+        <nav className="navbar">
             <div class="img.kasa">
-                <img  className="kasa" src={Kasa}/>
+                <img  className="kasa" alt="kasa" src={Kasa}/>
             </div>
             {/*Navigation*/ }
-            <NavLink to="/">
-                <div>Accueil</div>
-            </NavLink>
-            <NavLink to="/about" >
-                <div>A Propos</div>
-            </NavLink>
+            <ul className="ul_nav">
+                <NavLink to="/">
+                    <div>Accueil</div>
+                </NavLink>
+                <NavLink to="/about" >
+                    <div>A Propos</div>
+                </NavLink>
+                <NavLink to="/error" className="none" >
+                    <div>Error</div>
+                </NavLink>
+            </ul>
       </nav>
     );
 };

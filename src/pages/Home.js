@@ -7,16 +7,15 @@ import Gallery from '../components/Gallery';
 
 const Home = () => {
     return (
-
-        <body>
+        <div className="home">
             <Navigation />
-            <Logo />
-            <Gallery />
+            <main>
+                <Logo />
+                <Gallery />
+            </main>
             <Footer />
-        </body>
-
+        </div>
     );
-
 };
 
 export default Home;
