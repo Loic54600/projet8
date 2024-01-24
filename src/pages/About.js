@@ -1,8 +1,11 @@
 import React from 'react';
+
 import Navigation from '../components/Navigation';
 import Aboutlogo from '../components/Aboutlogo';
 import Aboutmenu from '../components/Aboutmenu';
 import Footer from '../components/Footer';
+
+
 
 
 
@@ -14,8 +17,8 @@ const About = () => {
         <div className="abouthome">
             <Navigation />
             <main>
-                <Aboutlogo />
-                <Aboutmenu />
+            <Aboutlogo />
+            <Aboutmenu/>
             </main>
             <Footer />
         </div>

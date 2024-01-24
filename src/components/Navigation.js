@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Kasa from "../assets/img/kasa.png";
 import { NavLink } from 'react-router-dom';
 
@@ -17,8 +18,11 @@ const Navigation = () => {
                 <NavLink to="/about" >
                     <div>A Propos</div>
                 </NavLink>
-                <NavLink to="/error" className="none" >
+                <NavLink to="/error">
                     <div>Error</div>
+                </NavLink>
+                <NavLink to="/location"  >
+                    <div>Location</div>
                 </NavLink>
             </ul>
       </nav>
