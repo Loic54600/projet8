@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Navigation from '../components/Navigation';
-import Aboutlogo from '../components/Aboutlogo';
-import Aboutmenu from '../components/Aboutmenu';
-import Footer from '../components/Footer';
+import Navigation from '../components/global/Navigation';
+import Aboutlogo from '../components/about/Aboutlogo';
+import Aboutmenu from '../components/about/Aboutmenu';
+import Footer from '../components/global/Footer';
 
 
 

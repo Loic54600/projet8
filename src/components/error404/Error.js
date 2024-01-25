@@ -1,5 +1,5 @@
 import React from 'react';
-import Error404 from "../assets/img/404.png";
+import Error404 from "../../assets/img/404.png";
 import { NavLink } from 'react-router-dom';
 
 const Error= () => {

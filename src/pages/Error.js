@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Navigation from '../components/Navigation';
-import Error from '../components/Error';
-import Footer from '../components/Footer';
+import Navigation from '../components/global/Navigation';
+import Error from '../components/error404/Error';
+import Footer from '../components/global/Footer';
 
 
 

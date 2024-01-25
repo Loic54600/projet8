@@ -1,8 +1,8 @@
 import React from 'react';
-import left from "../assets/img/carrousel/flech-left.png";
-import right from "../assets/img/carrousel/flech-right.png";
+import left from "../../assets/img/carrousel/flech-left.png";
+import right from "../../assets/img/carrousel/flech-right.png";
 
-import first from "../assets/img/mobile-about-background.png";
+import first from "../../assets/img/mobile-about-background.png";
 
 const Carrousel = () => {
     return (

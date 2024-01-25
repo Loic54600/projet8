@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
-import Logo from '../components/Logo';
-import Gallery from '../components/Gallery';
+import Navigation from '../components/global/Navigation';
+import Logo from '../components/home/Logo';
+import Gallery from '../components/home/Gallery';
+import Footer from '../components/global/Footer';
 
 
 const Home = () => {

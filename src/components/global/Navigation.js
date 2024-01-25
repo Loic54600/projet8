@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Kasa from "../assets/img/kasa.png";
+import Kasa from "../../assets/img/kasa.png";
 import { NavLink } from 'react-router-dom';
 
 

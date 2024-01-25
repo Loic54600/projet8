@@ -1,5 +1,5 @@
 import React from 'react';
-import Kasafooter from "../assets/img/kasa.footer.png";
+import Kasafooter from "../../assets/img/kasa.footer.png";
 
 const Footer = () => {
     return (

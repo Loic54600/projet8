@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Navigation from '../components/Navigation';
-import Carrousel from '../components/Carrousel';
-import Card from '../components/Card';
-import Detail from '../components/Detail';
-import Collapse from '../components/Collapse';
-import Footer from '../components/Footer';
+import Navigation from '../components/global/Navigation';
+import Carrousel from '../components/location/Carrousel';
+import Card from '../components/location/Card';
+import Detail from '../components/location/Detail';
+import Team from '../components/location/Team';
+import Footer from '../components/global/Footer';
 
 
 const Location = () => {
@@ -16,7 +16,7 @@ const Location = () => {
                     <Carrousel />
                     <Card />
                     <Detail />
-                    <Collapse />
+                    <Team />
                 </main>
             <Footer />
         </div>

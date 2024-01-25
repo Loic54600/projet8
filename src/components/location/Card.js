@@ -1,5 +1,5 @@
 import React from 'react';
-import Host from "../assets/img/Host.png";
+import Host from "../../assets/img/Host.png";
 
 
 const Card = () => {

@@ -1,17 +1,26 @@
+//Dossier components
 @import "./settings";
-@import "./components/navigation";
-@import "./components/logo";
-@import "./components/card";
-@import "./components/gallery";
-@import "./components/footer";
-@import "./components/menu";
-@import "./components/error";
-@import "./components/carrousel";
-@import "./components/detail";
-@import "./components/collapse";
+
+//Dossier Global
+@import "./components/global/navigation";
+@import "./components/global/footer";
+
+//Dossier Accueil
+@import "./components/accueil/logo";
+@import "./components/accueil/gallery";
 
 
-@import "./components/aboutlogo";
-@import "./components/aboutmenu";
+//Dossier Error404
+@import "./components/error404/error";
+
+//Dossier Location
+@import "./components/location/card";
+@import "./components/location/carrousel";
+@import "./components/location/detail";
+@import "./components/location/team";
+
+//Dossier About
+@import "./components/about/aboutlogo";
+@import "./components/about/aboutmenu";
 
 
