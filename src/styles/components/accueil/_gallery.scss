@@ -1,9 +1,27 @@
 .gallery {
     width: 90%;
     margin: 0 auto;
+
+    .gallery_img {
+        object-fit: cover;
+        width: 340px;
+        height: 340px;
+        border-radius: 20px;
+    }
+
 }
 
+.test {
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    grid-template-rows: repeat(3, 340px);
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: $grey;
 
+}
 
 
 @media only screen and (width <=768px) {

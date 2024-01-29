@@ -1,4 +1,5 @@
 import React from 'react';
+import collapses from "../../../src/datas/collapses.json";
 
 
 
@@ -7,20 +8,17 @@ const Aboutmenu = () => {
     <section className="aboutgallery">
       <div className="aboutgallery_cards">
         <section className="menu">
-          <main>
-            <div>
-              <details class="accordion">
-                <summary class="accordion__title">
-                  Accordion title
-                </summary>
-                <div class="accordion__content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales, nulla sit amet porttitor rhoncus, lacus ex vestibulum libero, ac mollis neque ante id justo. Nam tempor euismod nisi ac ornare. Pellentesque id sapien lacinia, venenatis est aliquam, dignissim elit. Suspendisse potenti. Cras ut ante in libero tempus sodales sed quis dolor.</p>
-                </div>
-              </details>
-
-
-            </div>
-          </main>
+          {collapses.map((collapse) => {
+            return (
+            <details class="accordion" key={collapse.id}>
+              <summary class="accordion__title">{collapse.title}
+              </summary>
+              <div class="accordion__content">
+                <p>{collapse.content}</p>
+              </div>
+            </details>
+            );
+          })}
         </section>
       </div>
 
