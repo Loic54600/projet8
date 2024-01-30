@@ -18,12 +18,10 @@ const Navigation = () => {
                 <NavLink to="/about" >
                     <div>A Propos</div>
                 </NavLink>
+                {/*
                 <NavLink to="/error">
                     <div>Error</div>
-                </NavLink>
-                <NavLink to="/location"  >
-                    <div>Location</div>
-                </NavLink>
+                </NavLink> */ }
             </ul>
       </nav>
     );

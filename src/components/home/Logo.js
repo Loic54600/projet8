@@ -4,7 +4,7 @@ const Logo = () => {
     return (
         <section className="section_logo">
             <div className="logo"> 
-                <h3>Chez vous, partout et ailleurs</h3>
+                <h1>Chez vous, partout et ailleurs</h1>
             </div>
         </section>
     );

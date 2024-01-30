@@ -1,18 +1,22 @@
 import React from 'react';
-import Host from "../../assets/img/Host.png";
+import logements from "../../../src/datas/logement.json";
 
 
 const Card = () => {
     return (
         <section className="detail">
-            <div className="title">
-                <h2 className="h2_title">Cozy</h2>
-                <p className="p_title">Paris</p>
-            </div>
-            <div className="profil">
-            <h3 className="h3_title">Paris</h3>
-            <img  className="Host" alt="photo" src={Host}/>
-            </div>
+            {logements.map((logement) => {
+                return (
+                    <div className="title" key={logement.id}>
+                        <h2 className="h2_title">{logement.title}</h2>
+                        <p className="p_title">{logement.location}</p>
+                    </div>
+                    /*<div className="profil">
+                        <h3 className="h3_title">{logement.name}</h3>
+                        <img  className="Host" src={logement.picture} alt="image de logement"/>
+                    </div>*/
+                    );
+                })}
         </section>
     );
 };

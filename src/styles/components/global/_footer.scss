@@ -4,19 +4,26 @@ footer {
     flex-direction: column;
     background-color: $color-3;
     width: 100%;
-    height: 150px;
-    position:absolute;
-    bottom:0 auto;  /* on le colle en bas */
+    height: 100%;
     font-family: "Montserrat", sans-serif;
+    margin-top: 30px;
 
 }
 
 h3 {
+    font-size: 30px;
     margin-left: 10px;
     color: $white;
+
 }
 
 img.kasafooter {
-    margin-bottom: 5px;
+    width: 200px;
+    margin-bottom: 15px;
     margin-top: 30px;
+}
+
+@media only screen and (width <= 768px) {
+    
+
 }

@@ -28,7 +28,7 @@
   text-decoration: underline;
 }
 img.kasa {
-      width: 70%;
+      width: 250px;
       margin-left: 100px;
 }
 .none {
@@ -39,12 +39,9 @@ img.kasa {
 @media only screen and (width <= 768px) {
      
       img.kasa {
-            width: 70%;
             margin-left: 50px;
       }
-
-
-
-
-     
+      .navbar .ul_nav {
+            margin-right: 50px;
+        }
 }

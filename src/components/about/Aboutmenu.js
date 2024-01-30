@@ -7,21 +7,20 @@ const Aboutmenu = () => {
   return (
     <section className="aboutgallery">
       <div className="aboutgallery_cards">
+        /*
         <section className="menu">
           {collapses.map((collapse) => {
-            return (
-            <details class="accordion" key={collapse.id}>
-              <summary class="accordion__title">{collapse.title}
-              </summary>
-              <div class="accordion__content">
-                <p>{collapse.content}</p>
-              </div>
-            </details>
-            );
+              return (
+              <details class="accordion" key={collapse.id}>
+                  <summary class="accordion__title">{collapse.title}</summary>
+                  <div class="accordion__content">
+                    <p>{collapse.content}</p>
+                  </div>
+              </details>
+              );
           })}
-        </section>
+        </section> 
       </div>
-
     </section>
   );
 };
