@@ -1,5 +1,5 @@
 $color-1: #61dafb;
-$color-2: salmon;
+$color-2: #FF6060;
 $color-3: black;
 $color-4:var(--red);;
 $white: rgb(255, 255, 255);
@@ -14,8 +14,17 @@ $grey : rgba(231, 229, 229, 0.952);
 body {
   background: $white;
   margin: 0;
-
+  display: flex;
+  justify-content: center;
 }
+.location {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 
 li {
   list-style-type: none;

@@ -7,11 +7,11 @@ import Footer from '../components/global/Footer';
 
 const About = () => {
     return (
-        <div className="abouthome">
+        <div>
             <Navigation />
             <main>
-            <Aboutlogo />
-            <Aboutmenu/>
+                <Aboutlogo />
+                <Aboutmenu />
             </main>
             <Footer />
         </div>

@@ -4,10 +4,19 @@
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 90%;
-    height: 220px;
+    width: 1240px;
+    height: 223px;
     border-radius: 20px;
     box-shadow: 0 5px 3px rgba(0, 0, 0, 0.307);
     background: url(../../../assets/img/mobile-about-background.png) center/cover;
 
 }
+
+@media only screen and (width <= 768px) {
+     
+    .aboutlogo {
+      width: 750px;
+    }
+        
+    }
+    

@@ -1,26 +1,32 @@
 import React from 'react';
 
 import Navigation from '../components/global/Navigation';
-import Carrousel from '../components/location/Carrousel';
 import Card from '../components/location/Card';
-import Detail from '../components/location/Detail';
-import Team from '../components/location/Team';
 import Footer from '../components/global/Footer';
 
+import logements from "../../src/datas/logement.json";
+import Carrousel from '../components/location/Carrousel';
+
+
+
+function getLogement(){
+    const logementID = window.location.pathname.replace('/logement/', '');
+    const logement = logements.find((logement)=> { return logement.id === logementID })
+    return logement !== null ? logement :  [];
+}
 
 const Location = () => {
     return (
-        <div className="home">
+        <div className="location">
             <Navigation />
                 <main>
-                    <Carrousel />
-                    <Card />
-                    <Detail />
-                    <Team />
+                    <Carrousel logement={getLogement()}/>
+                    <Card logement={getLogement()}/>
                 </main>
             <Footer />
         </div>
     );
 };
+
 
 export default Location;

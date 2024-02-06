@@ -8,7 +8,7 @@ import Footer from '../components/global/Footer';
 
 const Home = () => {
     return (
-        <div className="home">
+        <div>
             <Navigation />
             <main>
                 <Logo />

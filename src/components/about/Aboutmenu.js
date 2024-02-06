@@ -7,7 +7,6 @@ const Aboutmenu = () => {
   return (
     <section className="aboutgallery">
       <div className="aboutgallery_cards">
-        /*
         <section className="menu">
           {collapses.map((collapse) => {
               return (
