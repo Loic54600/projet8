@@ -1,24 +1,37 @@
-section.error  {
-    height: 700px;
+.Errorhome {
+    display: flex;
+    margin: 0 auto;
+    height: 725px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
+
 .error {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:$white ;
+    background-color: $white ;
     width: 597px;
     height: 263px;
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 0 auto;
+}
 
-    .h2-404 {
-        color: $color-2;
-        font-size: 36px;
-        font-family: "Montserrat", sans-serif;
-        width: 872px;
-        height: 51px;
-    }
+.h2-404 {
+    display: flex;
+    color: $color-2;
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    width: 872px;
+    height: 55px;
+
+}
+
+img.error {
+    width: 597px;
+    height: 263px;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .back {
@@ -28,18 +41,45 @@ section.error  {
     color: $color-2;
     text-decoration: underline;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
-    
+
 div.back:hover {
     text-decoration: underline;
 }
+
 div.back.active {
-text-decoration: underline;
+    text-decoration: underline;
 }
 
+@media screen and (max-width:1440px) {
 
-@media only screen and (width <= 768px) {
     .error .h2-404 {
-        font-size: 25px;
+        font-size: 18px;
+        width: 260px;
+        height: 52px;
+        margin: 0 auto;
+    }
+
+
+    .Errorhome {
+        width: 375px;
+        height: 600px;
+    }
+
+    .error {
+        width: 158px;
+        height: 100px;
+    }
+
+    img.error {
+        width: 200px;
+        height: 100px;
+    }
+
+    .back {
+        width: 220px;
+        height: 20px;
+        font-size: 15px;
     }
 }

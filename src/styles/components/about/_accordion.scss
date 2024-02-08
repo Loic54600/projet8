@@ -1,0 +1,57 @@
+.accordion__section {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.accordion {
+  background-color: $color-2;
+  color: $white;
+  cursor: pointer;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+  border-radius: 10px;
+  width: 1023px;
+  height: 53px;
+  margin: 0 auto;
+}
+
+
+p.accordion__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: left;
+}
+
+.accordion__icon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+  width: 25px;
+  color: $white;
+
+}
+
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.accordion__content {
+  background-color: white;
+  overflow: auto;
+  transition: max-height 0.6s ease;
+  margin: 0 auto;
+  border-radius: 2px solid black;
+}
+
+.accordion__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 18px;
+}

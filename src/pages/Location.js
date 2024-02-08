@@ -20,7 +20,7 @@ const Location = () => {
         <div className="location">
             <Navigation />
                 <main>
-                    <Carrousel logement={getLogement()}/>
+                    {/*<Carrousel logement={getLogement()}/> */}
                     <Card logement={getLogement()}/>
                 </main>
             <Footer />

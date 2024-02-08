@@ -32,9 +32,7 @@ const Card = ({ logement }) => {
                         <div className="accordion_content">
                             <p>{logement.description}</p>
                         </div>
-                    </details>
-                    
-
+                    </details>  
                 </div>
             </section>
         </section>

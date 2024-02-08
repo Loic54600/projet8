@@ -9,7 +9,7 @@ const Navigation = () => {
     return (
         <header>
             <nav className="navbar">
-                <div class="img.kasa">
+                <div className="img.kasa">
                     <img className="kasa" alt="kasa" src={Kasa} />
                 </div>
                 {/*Navigation*/}

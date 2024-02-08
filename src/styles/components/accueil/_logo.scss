@@ -1,9 +1,8 @@
-.logo {
+.section_logo {
   @include verticalCenter;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
   width: 1240px;
   height: 223px;
   border-radius: 20px;
@@ -11,18 +10,24 @@
   background: url(../../../assets/img/Falaise.png) center/cover;
   filter: brightness(75%);
 
-  .title {
+  h1.title {
     color: $white;
     font-size: 30px;
     font-family: "Montserrat", sans-serif;
     margin: 0 auto;
-
   }
+  
 }
 
-@media only screen and (width <=768px) {
-  .logo {
-    width: 750px;
+@media only screen and (max-width: 1440px) {
+  .section_logo{
+    width: 335px;
+    margin: 0 auto;
   }
+
+  h1.title {
+    font-size: 18px;
+  }
+
 
 }

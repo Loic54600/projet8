@@ -2,21 +2,33 @@
       @include verticalCenter;
       display: flex;
       width: 1240px;
-      height: 100px;
+      height: 80px;
       font-size: 24px;
       font-family: "Montserrat", sans-serif;
       background-color: $white;
-      gap: 550px;
-      
+      justify-content: space-between;
+
+
       .ul_nav {
-      display: flex;
-      gap: 50px;
-      
+            display: flex;
+            gap: 50px;
+            padding: 0;
+            margin: 0;
+
       }
 }
+
+header {
+      display: flex;
+      width: 1240px;
+      height: 80px;
+      margin: 0 auto;
+}
+
 .navbar a {
       text-decoration: none;
       color: $color-2;
+
 }
 
 .navbar a:hover {
@@ -24,18 +36,39 @@
 }
 
 .navbar a.active {
-  text-decoration: underline;
+      text-decoration: underline;
 }
 
 img.kasa {
       width: 210px;
       height: 68px;
-      
+
 }
+
 .none {
       display: none;
 }
 
-@media only screen and (width <= 768px) {
-     
+@media (min-width:350px) and (max-width:1440px) {
+
+      .header {
+            display: flex;
+            margin: 0 auto;
+            height: 60px;
+      }
+
+      .navbar {
+            width: 335px;
+            height: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 12px;
+      }
+
+      img.kasa {
+            width: 100px;
+            height: 35px;
+      }
+
+
 }

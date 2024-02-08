@@ -1,58 +1,44 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 
 import left from "../../assets/img/carrousel/flech-left.png";
 import right from "../../assets/img/carrousel/flech-right.png";
 
-/*
-let start = 0;
-let move = slides.length;
 
-let arrow_right = document.querySelector('.arrow_right');
-let arrow_left = document.querySelector('.arrow_left');
+function Carrousel({ pictures }) {
 
-function creationCaroussel(start) {
+	const [index, setIndex] = useState()
+	const totalPictures = pictures.length - 1
 
-	let element = slides[start];
-	let img = document.querySelector(".banner-img");
-	img.setAttribute("src", "../../src/datas/logement.json" + "element.image");
-}
+	if (index < 0) setIndex(totalPictures)
+	if (index > totalPictures) setIndex(0)
 
-arrow_right.addEventListener("click", () => {
-	if (start === move - 1) {
-		start = 0;
-	} else {
-		start++;
-	}
-	creationCaroussel(start);
-});
-
-arrow_left.addEventListener("click", () => {
-	if (start === 0) {
-		start = move - 1;
-	}
-	else {
-		start--;
-	}
-	creationCaroussel(start);
-});
-
-*/
-
-
-
-
-
-
-const Carrousel = ({ logement }) => {
 	return (
-		<section className="carrousel_banner">
-			<div className="banner">
-				<img className="banner-img" alt="image location" src={logement.host.picture} />
-				<img className="arrow arrow_left" alt="fleche gauche" src={left} />
-				<img className="arrow arrow_right" alt="fleche droite" src={right} />
+		<div className='carrousel'>
+
+			<div className='div-image'>
+				<img src={pictures[index]} className="classImage" key={"car-" + index} alt={"photo " + index} />
 			</div>
-		</section>
-	);
-};
+
+			{totalPictures > 0 && (
+				<div>
+					<button onClick={() => setIndex(index - 1)}>{index}
+						<img src={left} className='classleft' alt={'flèche gauche' + index} />
+					</button>
+					<button onClick={() => setIndex(index + 1)}>{index}
+						<img src={right} className='classright' alt={'flèche droite' + index} />
+					</button>
+				</div>
+			)}
+			{totalPictures > 0 && (
+
+				<div className='div-compteur'>
+					<p className='compteurImages'>
+						{index + 1}/{totalPictures + 1}
+					</p>
+				</div>
+			)}
+		</div>
+	)
+}
 
 export default Carrousel;

@@ -9,11 +9,11 @@ import Footer from '../components/global/Footer';
 
 const Errorhome = () => {
     return (
-        <div className='Errorhome'>
-            <Navigation /> 
-                <main>
-                    <Error />
-                </main>
+        <div>
+            <Navigation />
+            <main className='Errorhome'>
+                <Error />
+            </main>
             <Footer />
         </div>
     );

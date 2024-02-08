@@ -1,17 +1,19 @@
 /*secion_element*/
+.detail {
+    margin-left: 0;
+    margin-right: 0;
+
+}
 .detail_element {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 1240px;
     height: 100px;
-    margin-left: 225px;
-    gap: 425px;
-
 }
 
+
 .title {
-    margin-left: 100px;
 
     .h2_title {
         font-family: "Montserrat", sans-serif;
@@ -36,8 +38,10 @@
 }
 
 .profil {
-    margin-right: 150px;
+    margin-left: 0;
+    margin-right: 0;
     display: flex;
+    justify-content: space-between;
 
     .h3_title {
         font-family: "Montserrat", sans-serif;
@@ -59,12 +63,13 @@
 /*partie tag*/
 .tag-star {
     display: flex;
-    gap: 850px;
+    justify-content: space-between;
+    align-items: center;
 }
 .tag {
     display: flex;
     gap: 20px;
-    margin-left: 300px;
+
 
 
     .element {
@@ -82,6 +87,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0;
     }
 }
 .accord_collapse {
@@ -126,8 +132,6 @@ $star-off-color: #CCCCCC;
 .rating {
 width: ($star-size * $stars) + ($star-spacing * ($stars - 1));
 height: $star-size;
-padding: 40px 50px;
-margin-right: 100px;
 
 label {
 float: right;

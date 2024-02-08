@@ -3,9 +3,7 @@ import React from 'react';
 const Logo = () => {
     return (
         <section className="section_logo">
-            <div className="logo"> 
-                <h1 className="title">Chez vous, partout et ailleurs</h1>
-            </div>
+            <h1 className="title">Chez vous, partout et ailleurs</h1>
         </section>
     );
 };

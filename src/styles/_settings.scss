@@ -1,7 +1,8 @@
 $color-1: #61dafb;
 $color-2: #FF6060;
 $color-3: black;
-$color-4:var(--red);;
+$color-4: var(--red);
+;
 $white: rgb(255, 255, 255);
 $grey : rgba(231, 229, 229, 0.952);
 
@@ -11,12 +12,17 @@ $grey : rgba(231, 229, 229, 0.952);
   align-items: center;
 }
 
-body {
+html, body {
   background: $white;
   margin: 0;
-  display: flex;
+  display: table;
   justify-content: center;
+  margin: 0 auto;
+  width: 1440px;
+  height: 100%;
+
 }
+
 .location {
   display: flex;
   justify-content: center;
@@ -24,8 +30,25 @@ body {
   align-items: center;
 }
 
-
-
 li {
   list-style-type: none;
+}
+
+.main_home {
+  width: 1440px;
+}
+
+@media screen and (max-width:1550px) {
+
+  html, body {
+    width: 375px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .main_home {
+    width: 375px;
+    margin: 0 auto;
+  }
+
 }
