@@ -3,17 +3,15 @@ footer {
     flex-direction: column;
     background-color: $color-3;
     width: 1440px;
-    height: 100px;
-    margin-top: 15px;
-    padding-top: 36px;
-
+    height: 209px;
 }
 
-h3 {
+.footer_h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     margin-left: 10px;
     color: $white;
+    margin-top: 15px;
 
 }
 
@@ -24,11 +22,14 @@ img.kasafooter {
     
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width:768px) {
     
     footer {
         width: 375px;
         height: 209px;
         margin: 0 auto;
+    }
+    .footer_h3 {
+        font-size: 15px;
     }
 }

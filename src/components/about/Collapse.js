@@ -3,6 +3,10 @@ import Accordion from "../../components/about/Accordion";
 import collapses from "../../../src/datas/collapses.json";
 
 
+
+
+
+
 const Collapse = () => {
   return (
     <section className="aboutgallery">

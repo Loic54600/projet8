@@ -6,6 +6,8 @@
     margin-right: auto;
     background-color: #F6F6F6;
     border-radius: 20px;
+    
+    background-position: center;
 
 
     .gallery_article {
@@ -22,6 +24,7 @@
         height: 340px;
         border-radius: 20px;
         box-shadow: 1px 1px 5px grey;
+        background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)); 
     }
 
     .gallery_title {

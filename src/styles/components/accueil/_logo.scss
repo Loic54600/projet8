@@ -5,27 +5,38 @@
   margin-bottom: 15px;
   width: 1240px;
   height: 223px;
-  border-radius: 20px;
-  box-shadow: 1px 1px 5px grey;
-  background: url(../../../assets/img/Falaise.png) center/cover;
-  filter: brightness(75%);
 
-  h1.title {
-    color: $white;
-    font-size: 30px;
-    font-family: "Montserrat", sans-serif;
+  .logo {
+    @include verticalCenter;
     margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 1240px;
+    height: 223px;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 20px;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../../../assets/img/Falaise.png'); 
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
   }
-  
+  .logo_h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+  }
 }
 
+
+
 @media only screen and (max-width: 1440px) {
-  .section_logo{
+  .section_logo {
     width: 335px;
     margin: 0 auto;
   }
 
-  h1.title {
+  .logo_h1 {
     font-size: 18px;
   }
 
