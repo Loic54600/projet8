@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import left from "../../assets/img/carrousel/flech-left.png";
 import right from "../../assets/img/carrousel/flech-right.png";
@@ -8,6 +8,18 @@ function Carrousel({ pictures }) {
 
 	const [index, setIndex] = useState()
 	const totalPictures = pictures.length - 1
+
+	const nextSlide = () => {
+        setIndex(index + 1)
+        if(index === pictures.length - 1)
+            setIndex(0)
+    }
+
+    const prevSlide = () => {
+        setIndex(index - 1)
+        if(index === 0)
+            setIndex(pictures.length - 1)
+    }
 
 	if (index < 0) setIndex(totalPictures)
 	if (index > totalPictures) setIndex(0)
@@ -21,10 +33,10 @@ function Carrousel({ pictures }) {
 
 			{totalPictures > 0 && (
 				<div>
-					<button onClick={() => setIndex(index - 1)}>{index}
+					<button onClick={(nextSlide) => setIndex(index - 1)}>{index}
 						<img src={left} className='classleft' alt={'flèche gauche' + index} />
 					</button>
-					<button onClick={() => setIndex(index + 1)}>{index}
+					<button onClick={(prevSlide) => setIndex(index + 1)}>{index}
 						<img src={right} className='classright' alt={'flèche droite' + index} />
 					</button>
 				</div>

@@ -3,6 +3,7 @@ import React from 'react';
 import Navigation from '../components/global/Navigation';
 import Card from '../components/location/Card';
 import Footer from '../components/global/Footer';
+import Profil from '../components/location/Profil';
 
 import logements from "../../src/datas/logement.json";
 import Carrousel from '../components/location/Carrousel';
@@ -20,7 +21,8 @@ const Location = () => {
         <div className="location">
             <Navigation />
                 <main>
-                    {/*<Carrousel logement={getLogement()}/> */}
+                    <Carrousel logement={getLogement()}/>
+                    <Profil logement={getLogement()}/>
                     <Card logement={getLogement()}/>
                 </main>
             <Footer />
