@@ -1,8 +1,8 @@
 .section_logo {
   @include verticalCenter;
   margin: 0 auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 50px;
   width: 1240px;
   height: 223px;
 
@@ -30,7 +30,7 @@
 
 
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 768px) {
   .section_logo {
     width: 335px;
     margin: 0 auto;

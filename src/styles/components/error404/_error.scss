@@ -2,8 +2,8 @@
     display: flex;
     margin: 0 auto;
     height: 725px;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .error {
@@ -17,7 +17,7 @@
     margin: 0 auto;
 }
 
-.h2-404 {
+.h3-404 {
     display: flex;
     color: $color-2;
     font-size: 36px;
@@ -52,13 +52,13 @@ div.back.active {
     text-decoration: underline;
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width:768px) {
 
-    .error .h2-404 {
+    .error .h3-404 {
         font-size: 18px;
         width: 260px;
         height: 52px;
-        margin: 0 auto;
+        margin-left: 40px;
     }
 
 

@@ -2,8 +2,8 @@
     @include verticalCenter;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     width: 1240px;
     height: 223px;
     border-radius: 20px;
@@ -12,3 +12,9 @@
 
 }
 
+@media screen and (max-width:768px) {
+
+
+  
+
+}

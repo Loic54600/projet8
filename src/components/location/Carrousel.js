@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import left from "../../assets/img/carrousel/flech-left.png";
 import right from "../../assets/img/carrousel/flech-right.png";

@@ -1,6 +1,6 @@
 import React from 'react';
 import Accordion from "../../components/about/Accordion";
-import collapses from "../../../src/datas/collapses.json";
+import Collapses from "../../../src/datas/collapses.json";
 
 
 
@@ -11,12 +11,12 @@ const Collapse = () => {
   return (
     <section className="aboutgallery">
       <div className="aboutgallery_cards">
-        {collapses.map((collapse) => {
+        {Collapses.map((Collapse) => {
           return (
-            <div className="App" key={collapse.id} >
+            <div className="App" key={Collapse.id} >
               <Accordion
-                title="{collapse.title}"
-                content="{collapse.content}"
+                title={Collapse.title}
+                content={Collapse.content}
               />
             </div>
           );

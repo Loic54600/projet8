@@ -1,14 +1,5 @@
 import React from 'react';
 
-
-function Tag() {
-    return (
-        <div className="tag" >
-            <p className="element"></p>
-        </div>)
-}
-
-
 const Card = ({ logement }) => {
     return (
         <section>
@@ -25,7 +16,9 @@ const Card = ({ logement }) => {
                 </section>
                 <section className="tag-star">
 
-                    <Tag />
+                    <div className="tag" >
+                        <p className="element"> src={logement.tags}</p>
+                    </div>
 
 
                     {/* 

@@ -9,7 +9,7 @@ const About = () => {
     return (
         <div>
             <Navigation />
-            <main>
+            <main className="main_home">
                 <Aboutlogo />
                 <Collapse />
             </main>

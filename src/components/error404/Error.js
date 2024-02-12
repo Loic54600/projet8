@@ -8,11 +8,12 @@ const Error= () => {
             <div className="img.error">
                 <img  className="error" alt="error" src={Error404}/>
             </div>
-            <h2 className="h2-404"> Oups! La page que vous deamndez n'existe pas.</h2>
+            <div>
+                <h3 className="h3-404"> Oups! La page que vous demandez n'existe pas.</h3>
+            </div>
             <NavLink to="/">
                     <div className="back">Retourner sur la page d'accueil</div>
-                </NavLink>
-            
+            </NavLink>
         </section>
     );
 };
