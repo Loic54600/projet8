@@ -23,9 +23,9 @@ const Location = () => {
         <div className="location">
             <Navigation />
                 <main>
-                    <Carrousel pictures={getLogement()}/>
+                    {/*<Carrousel pictures={getLogement()}/>*/}
                     <Profil logement={getLogement()}/>
-                    {/*<Tag logement={getLogement()}/>*/}
+                    <Tag logement={getLogement()}/>
                     <Rate logement={getLogement()}/>
                     <Card logement={getLogement()}/>
                 </main>

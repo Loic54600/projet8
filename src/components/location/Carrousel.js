@@ -4,21 +4,21 @@ import left from "../../assets/img/carrousel/flech-left.png";
 import right from "../../assets/img/carrousel/flech-right.png";
 
 
-function Carrousel({ pictures }) {
+function Carrousel({ logement }) {
 
-	const [index, setIndex] = useState(0)
-	const totalPictures = pictures.length - 1
+	const [index, setIndex] = useState(0);
+	const totalPictures = logement.length - 1;
 
 	const nextSlide = () => {
 		setIndex(index + 1)
-		if (index === pictures.length - 1)
+		if (index === logement.length - 1)
 			setIndex(0)
 	}
 
 	const prevSlide = () => {
 		setIndex(index - 1)
 		if (index === 0)
-			setIndex(pictures.length - 1)
+			setIndex(logement.length - 1)
 	}
 
 	if (index < 0) setIndex(totalPictures)
@@ -26,18 +26,16 @@ function Carrousel({ pictures }) {
 
 	return (
 		<div className='carrousel'>
+			{logement.map((logement, index) => {
 			<div className='div-image'>
-				<img src={pictures[index]} className="classImage" key={"car-" + index} alt={"photo " + index} />
+				<img src={logement[index]} className="classImage" key={"car-" + index} alt={"photo " + index} />
 			</div>
+			      })}
 
 			{totalPictures.length > 0 && (
 				<div className="Buttonslide">
-					<button onClick={(nextSlide) => setIndex(index - 1)}>{index}
-						<img src={left} className='classleft' alt={'flèche gauche' + index} />
-					</button>
-					<button onClick={(prevSlide) => setIndex(index + 1)}>{index}
-						<img src={right} className='classright' alt={'flèche droite' + index} />
-					</button>
+					<img src={left} onClick={prevSlide} className="arrow" alt="Preview icon" />
+          			<img src={right} onClick={nextSlide} className="arrow" alt="Next icon" />	
 				</div>
 			)}
 			{totalPictures > 0 && (
