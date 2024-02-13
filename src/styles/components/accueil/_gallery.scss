@@ -71,18 +71,17 @@
     .gallery {
         width: 350px;
         background-color: white;
-    }
-
-    .gallery_article{
+        .gallery_article{
         width: 335px;
-    }
+        } 
 
-    .gallery_title {
-        font-size: 15px;
-    }
+        &_title {
+            font-size: 15px;
+        }
 
-    .gallery_encadrement a {
-        width: 100%;
-    }
+        &_encadrement a {
+            width: 100%;
+        }
 
+    }  
 }
