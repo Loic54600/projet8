@@ -4,7 +4,7 @@ import Collapses from "../../../src/datas/collapses.json";
 
 const Collapse = () => {
   return (
-    <section>
+    <section className="section_collapse">
       <section className="section_logo">
         <div className="aboutlogo" alt="montagne">
         </div>

@@ -1,13 +1,11 @@
 .navbar {
       @include verticalCenter;
       display: flex;
-      width:1240px;
       height: 120px;
       font-size: 24px;
       font-family: "Montserrat", sans-serif;
       background-color: $white;
       justify-content: space-between;
-
 
       .ul_nav {
             display: flex;
@@ -49,6 +47,13 @@ img.kasa {
 }
 
 @media (max-width:768px) {
+      img.kasa {
+            width: 145px;
+            height: 45px;
+      }
 
+      .navbar {
+            font-size: 18px;
+      }
 
 }
