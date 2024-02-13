@@ -4,9 +4,11 @@ import Navigation from '../components/global/Navigation';
 import Card from '../components/location/Card';
 import Footer from '../components/global/Footer';
 import Profil from '../components/location/Profil';
+import Tag from '../components/location/Tag';
 
 import logements from "../../src/datas/logement.json";
 import Carrousel from '../components/location/Carrousel';
+import Rate from '../components/location/Rate';
 
 
 
@@ -21,8 +23,10 @@ const Location = () => {
         <div className="location">
             <Navigation />
                 <main>
-                    <Carrousel logement={getLogement()}/>
+                    <Carrousel pictures={getLogement()}/>
                     <Profil logement={getLogement()}/>
+                    {/*<Tag logement={getLogement()}/>*/}
+                    <Rate logement={getLogement()}/>
                     <Card logement={getLogement()}/>
                 </main>
             <Footer />

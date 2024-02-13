@@ -1,8 +1,8 @@
 .navbar {
       @include verticalCenter;
       display: flex;
-      width: 1240px;
-      height: 80px;
+      width:1240px;
+      height: 120px;
       font-size: 24px;
       font-family: "Montserrat", sans-serif;
       background-color: $white;
@@ -12,17 +12,16 @@
       .ul_nav {
             display: flex;
             gap: 50px;
-            padding: 0;
-            margin: 0;
-
       }
 }
 
 header {
       display: flex;
       width: 1240px;
-      height: 80px;
-      margin: 0 auto;
+      height: 120px;
+      margin-left: auto;
+      margin-right: auto;
+
 }
 
 .navbar a {
@@ -51,24 +50,5 @@ img.kasa {
 
 @media (min-width:350px) and (max-width:1440px) {
 
-      .header {
-            display: flex;
-            margin: 0 auto;
-            height: 60px;
-      }
-
-      .navbar {
-            width: 335px;
-            height: 50px;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 12px;
-      }
-
-      img.kasa {
-            width: 100px;
-            height: 35px;
-      }
-
-
+  
 }

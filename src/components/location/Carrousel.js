@@ -6,7 +6,7 @@ import right from "../../assets/img/carrousel/flech-right.png";
 
 function Carrousel({ pictures }) {
 
-	const [index, setIndex] = useState()
+	const [index, setIndex] = useState(0)
 	const totalPictures = pictures.length - 1
 
 	const nextSlide = () => {
@@ -31,7 +31,7 @@ function Carrousel({ pictures }) {
 			</div>
 
 			{totalPictures.length > 0 && (
-				<div>
+				<div className="Buttonslide">
 					<button onClick={(nextSlide) => setIndex(index - 1)}>{index}
 						<img src={left} className='classleft' alt={'flèche gauche' + index} />
 					</button>

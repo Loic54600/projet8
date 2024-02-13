@@ -2,12 +2,10 @@
     @include verticalCenter;
     display: flex;
     width: 1240px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     background-color: #F6F6F6;
     border-radius: 20px;
     background-position: center;
-
 
     .gallery_article {
         margin-left: auto;
@@ -47,10 +45,11 @@
     flex-wrap: wrap;
     grid-template-columns: repeat(4, 340px);
     grid-template-rows: repeat(4, 340px);
-    column-gap: 60px;
-    row-gap: 60px;
+    column-gap: 50px;
+    row-gap: 50px;
     justify-content: center;
     border-radius: 20px;
+    margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
 

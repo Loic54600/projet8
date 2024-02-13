@@ -9,7 +9,8 @@
     justify-content: space-between;
     align-items: center;
     width: 1240px;
-    height: 100px;
+    height: 120px;
+    margin-top: 30px;
 }
 
 .title {
@@ -18,8 +19,9 @@
         font-family: "Montserrat", sans-serif;
         color: $color-2;
         font-size: 36px;
-        margin: 0;
+        font-weight: 500;
         margin-bottom: 10px;
+        margin: 0 auto;
         width: 635px;
         height: 51px;
     }
@@ -32,7 +34,6 @@
         font-size: 18px;
         width: 200px;
         height: 26px;
-        margin-bottom: 15px;
         margin-top: 30px;
 
     }
@@ -120,44 +121,3 @@
     background-position: right 10px top 10px;
     background-size: 40px;
 } 
-
- /*Gere les étoiles */
-$stars: 5;
-$star-size: 36px;
-$star-spacing: 2px;
-$star-on-color: $color-2;
-$star-off-color: #CCCCCC;
-
-.rating {
-width: ($star-size * $stars) + ($star-spacing * ($stars - 1));
-height: $star-size;
-
-label {
-float: right;
-position: relative;
-width: $star-size;
-height: $star-size;
-cursor: pointer;
-
-&:not(:first-of-type) {
-  padding-right: $star-spacing;
-}
-
-&:before {
-  content: "\2605";
-  font-size: $star-size + 2px;
-  color: $star-off-color;
-  line-height: 1;
-}
-}
-
-input {
-display: none;
-}
-
-input:checked ~ label:before,
-&:not(:checked) > label:hover:before,
-&:not(:checked) > label:hover ~ label:before {
-color: $star-on-color;
-}
-}

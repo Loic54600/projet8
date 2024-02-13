@@ -14,12 +14,13 @@ $grey : rgba(231, 229, 229, 0.952);
 
 html, body {
   background: $white;
-  margin: 0;
-  display: table;
+  display: flex;
   justify-content: center;
-  margin: 0 auto;
-  width: 1440px;
-  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
+  position: relative;
+  background-color: black;
 
 }
 
@@ -34,15 +35,17 @@ li {
   list-style-type: none;
 }
 
-.main_home {
-  width: 1440px;
+.main_home, .location {
+  width: 100%;
+  background-color: white;
 }
 
-@media screen and (max-width:1550px) {
+@media screen and (max-width:768px) {
 
   html, body {
     width: 375px;
-    margin: 0 auto;
+    margin-left: auto;
+      margin-right: auto;
     height: 100%;
   }
 

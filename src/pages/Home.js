@@ -8,14 +8,12 @@ import Footer from '../components/global/Footer';
 
 const Home = () => {
     return (
-        <div>
+        <section className="main_home">
             <Navigation />
-            <main className="main_home">
                 <Logo />
                 <Gallery />
-            </main>
             <Footer />
-        </div>
+        </section>
     );
 };
 

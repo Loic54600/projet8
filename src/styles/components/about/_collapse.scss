@@ -16,7 +16,6 @@
   flex-direction: column;
 }
 
-
 .accordion {
   background-color: $color-2;
   color: $white;
@@ -31,11 +30,10 @@
   margin: 0 auto;
 }
 
-
 p.accordion__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
   text-align: left;
 }
 
@@ -53,7 +51,7 @@ p.accordion__title {
 
 .accordion__content {
   background-color: white;
-  overflow: auto;
+  overflow: hidden;
   transition: max-height 0.5s ease;
   margin: 0 auto;
   border-radius: 2px solid black;
@@ -62,12 +60,13 @@ p.accordion__title {
 
 .accordion__text {
   font-family: "Montserrat", sans-serif;
+  color: $color-2;
   width: 990px;
-  height: 50px;
+  height: 80px;
   background-color: #F6F6F6;
   border-radius: 0px 0px 20px 20px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   padding: 18px;
 }
 
