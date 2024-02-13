@@ -2,7 +2,7 @@ import React from 'react';
 import Accordion from "../../components/about/Accordion";
 import Logements from "../../../src/datas/logement.json";
 
-const Card = () => {
+const Card = ({logement}) => {
     return (
         <section className="aboutgallery">
         <div className="aboutgallery_cards">

@@ -6,19 +6,22 @@ import right from "../../assets/img/carrousel/flech-right.png";
 
 function Carrousel({ logement }) {
 
+	const pictures = logement.pictures;
+
 	const [index, setIndex] = useState(0);
-	const totalPictures = logement.length - 1;
+	const totalPictures = pictures.length - 1;
+
 
 	const nextSlide = () => {
 		setIndex(index + 1)
-		if (index === logement.length - 1)
+		if (index === pictures.length - 1)
 			setIndex(0)
 	}
 
 	const prevSlide = () => {
 		setIndex(index - 1)
 		if (index === 0)
-			setIndex(logement.length - 1)
+			setIndex(pictures.length - 1)
 	}
 
 	if (index < 0) setIndex(totalPictures)
@@ -26,26 +29,24 @@ function Carrousel({ logement }) {
 
 	return (
 		<div className='carrousel'>
-			{logement.map((logement, index) => {
 			<div className='div-image'>
-				<img src={logement[index]} className="classImage" key={"car-" + index} alt={"photo " + index} />
+				<img src={pictures[index]} className="classImage" key={"car-" + index} alt={"photo " + index} />
 			</div>
-			      })}
 
-			{totalPictures.length > 0 && (
+			{totalPictures > 1 ? (
 				<div className="Buttonslide">
 					<img src={left} onClick={prevSlide} className="arrow" alt="Preview icon" />
           			<img src={right} onClick={nextSlide} className="arrow" alt="Next icon" />	
 				</div>
-			)}
-			{totalPictures > 0 && (
+			) : ''}
 
+			{totalPictures > 1  ? (
 				<div className='div-compteur'>
 					<p className='compteurImages'>
-						{index + 1}/{totalPictures.length + 1}
+						{index + 1}/{totalPictures + 1}
 					</p>
 				</div>
-			)}
+			) : ''}
 		</div>
 	)
 }

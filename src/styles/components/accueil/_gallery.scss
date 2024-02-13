@@ -1,64 +1,70 @@
 .gallery {
     @include verticalCenter;
     display: flex;
-    width: 1240px;
     margin: 0 auto;
     background-color: #F6F6F6;
     border-radius: 20px;
-    background-position: center;
-    overflow-y: scroll;
-    margin-bottom: 50px;
 
-    height: 850px;
-
-    .gallery_article {
-        margin-left: auto;
-        margin-right: auto;
+    &_article {
         position: relative;
         display: inline-block;
-        
     }
 
-    .gallery_img {
+    &_img {
         object-fit: cover;
         width: 340px;
         height: 340px;
         border-radius: 20px;
         box-shadow: 1px 1px 5px grey;
-        
     }
 
-    .gallery_title {
+    &_title {
         font-family: "Montserrat", sans-serif;
         font-size: 18px;
         color: $white;
         display: block;
         position: absolute;
-        top: 250px;
+        box-sizing: border-box;
+        bottom: 0;
+        width: 100%;
         padding: 30px;
-        width: 280px;
-        height: 30px;
+        height: 90px;
         background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)); 
         border-radius: 20px;
     }
 
+    &_encadrement {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 20px;
+        padding: 50px;
+
+        a {
+            margin: 25px;
+            width: calc(100% / 3 - 50px);
+        }
+    }
 }
 
-.gallery_encadrement {
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(4, 340px);
-    grid-template-rows: repeat(4, 340px);
-    column-gap: 50px;
-    row-gap: 50px;
-    justify-content: center;
-    border-radius: 20px;
-    margin: 0 auto;
-    margin-top: 150px;
-    margin-bottom: 50px;
-    height: 820px;
+
+@media screen and (max-width:1240px) {
+    .gallery {
+        &_encadrement  {
+            padding: 20px;
+
+            a {
+                width: calc(100% / 2 - 50px);
+            }
+        }
+
+        &_img {
+            width: 100%;
+        }
+    }
 
 }
+
 
 @media screen and (max-width:768px) {
 
@@ -75,9 +81,8 @@
         font-size: 15px;
     }
 
-    .gallery_encadrement {
-        background-color: $white;
-        gap: 20px;
+    .gallery_encadrement a {
+        width: 100%;
     }
 
 }

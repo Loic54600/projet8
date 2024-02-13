@@ -1,8 +1,10 @@
 import greystar from "../../assets/img/star/grey_star.png";
 import redstar from "../../assets/img/star/red_star.png";
 
-export default function Rate({ score }) {
+export default function Rate({ logement }) {
 	const stars = [1, 2, 3, 4, 5];
+	const score = parseInt(logement.rating)
+
 	return (
 		<div className="rate-comp">
 			{stars.map((level) =>

@@ -9,8 +9,8 @@ const Gallery = () => {
             <div className="gallery_encadrement">
                 {logement.map((logement) => {
                     return (
-                        <Link to={`/logement/${logement.id}`}>
-                            <article className="gallery_article" key={logement.id}>
+                        <Link to={`/logement/${logement.id}`} key={logement.id}>
+                            <article className="gallery_article">
                                 <img className="gallery_img" src={logement.cover} alt="image de logement"/>
                                 <span className="gallery_title">{logement.title}</span>
                             </article>
