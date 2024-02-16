@@ -12,23 +12,25 @@ import Rate from '../components/location/Rate';
 
 
 
-function getLogement(){
+function getLogement() {
     const logementID = window.location.pathname.replace('/logement/', '');
-    const logement = logements.find((logement)=> { return logement.id === logementID })
-    return logement !== null ? logement :  [];
+    const logement = logements.find((logement) => { return logement.id === logementID })
+    return logement !== null ? logement : [];
 }
 
 const Location = () => {
     return (
         <div className="location">
             <Navigation />
-                <main>
-                    <Carrousel logement={getLogement()}/>
-                    <Profil logement={getLogement()}/>
-                    <Tag logement={getLogement()}/>
-                    <Rate logement={getLogement()}/>
+            <main>
+                <Carrousel logement={getLogement()} />
+                <section>
+                    <Profil logement={getLogement()} />
+                    <Tag logement={getLogement()} />
+                    <Rate logement={getLogement()} />
                     {/*<Card logement={getLogement()}/> */}
-                </main>
+                </section>
+            </main>
             <Footer />
         </div>
     );

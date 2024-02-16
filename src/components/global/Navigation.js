@@ -5,26 +5,26 @@ import Kasa from "../../assets/img/kasa.png";
 
 
 
-
+{/*Navigation*/ }
 const Navigation = () => {
     return (
         <header>
             <nav className="navbar">
-                <div className="img.kasa">
-                    <img className="kasa" alt="kasa" src={Kasa} />
-                </div>
-                {/*Navigation*/}
+                <NavLink to="/">
+                    <img className="img_kasa" alt="kasa" src={Kasa} />
+                </NavLink>
                 <ul className="ul_nav">
                     <NavLink to="/">
-                        <div>Accueil</div>
+                        <div className="ul_title">Accueil</div>
                     </NavLink>
                     <NavLink to="/about" >
-                        <div>A Propos</div>
+                        <div className="ul_title">A Propos</div>
                     </NavLink>
-                    {/*
-                <NavLink to="/error">
-                    <div>Error</div>
-                </NavLink> */ }
+                    {/* 
+                    <NavLink to="/error">
+                        <div className="ul_title">Error</div>
+                    </NavLink>
+                    */}
                 </ul>
             </nav>
         </header>

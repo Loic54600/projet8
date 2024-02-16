@@ -4,6 +4,7 @@
     margin: 0 auto;
     background-color: #F6F6F6;
     border-radius: 20px;
+    margin-bottom: 20px;
 
     &_article {
         position: relative;
@@ -36,7 +37,7 @@
     &_encadrement {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         border-radius: 20px;
         padding: 50px;
 

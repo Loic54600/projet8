@@ -3,49 +3,28 @@
     margin-left: 0;
     margin-right: 0;
 
-}
-.detail_element {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1240px;
-    height: 120px;
-    margin-top: 30px;
+    &_element {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1240px;
+        height: 120px;
+        margin-top: 20px;
+    }
 }
 
 .title {
-
-    .h2_title {
+    &_h2 {
         font-family: "Montserrat", sans-serif;
         color: $color-2;
-        font-size: 36px;
+        font-size: 35px;
         font-weight: 500;
         margin-bottom: 10px;
         margin: 0 auto;
-        width: 635px;
         height: 51px;
     }
 
-    .p_title {
-        font-family: "Montserrat", sans-serif;
-        color: $color-2;
-        margin: 0;
-        padding: 0;
-        font-size: 18px;
-        width: 200px;
-        height: 26px;
-        margin-top: 30px;
-
-    }
-}
-
-.profil {
-    margin-left: 0;
-    margin-right: 0;
-    display: flex;
-    justify-content: space-between;
-
-    .h3_title {
+    &_h3 {
         font-family: "Montserrat", sans-serif;
         color: $color-2;
         margin-right: 15px;
@@ -54,7 +33,26 @@
         height: 52px;
     }
 
-    .Host {
+    &_p {
+        font-family: "Montserrat", sans-serif;
+        color: $color-2;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        width: 200px;
+        height: 26px;
+
+    }
+
+}
+
+.profil {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
+
+    &_host {
         width: 64px;
         height: 64px;
         border-radius: 50%;
@@ -68,10 +66,11 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .tag {
     display: flex;
     gap: 20px;
-    
+
     .element {
         font-size: 14px;
         background-color: $color-2;
@@ -90,16 +89,19 @@
         margin: 0;
     }
 }
+
 .accord_collapse {
     display: flex;
     margin-left: 315px;
     gap: 90px;
 }
+
 .accord {
     background-color: $color-2;
     border-radius: 20px;
     width: 582px;
 }
+
 .accordion_content {
     background-color: #f5f5f5;
     height: 100px;
@@ -120,4 +122,4 @@
     background-repeat: no-repeat;
     background-position: right 10px top 10px;
     background-size: 40px;
-} 
+}
