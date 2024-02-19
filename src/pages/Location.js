@@ -5,10 +5,11 @@ import Footer from '../components/global/Footer';
 import Profil from '../components/location/Profil';
 import Tag from '../components/location/Tag';
 import Card from '../components/location/Card';
-
-import logements from "../../src/datas/logement.json";
 import Carrousel from '../components/location/Carrousel';
 import Rate from '../components/location/Rate';
+
+import logements from "../../src/datas/logement.json";
+
 
 
 
