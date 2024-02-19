@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Navigation from '../components/global/Navigation';
-import Card from '../components/location/Card';
 import Footer from '../components/global/Footer';
 import Profil from '../components/location/Profil';
 import Tag from '../components/location/Tag';

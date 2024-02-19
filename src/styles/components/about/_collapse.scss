@@ -1,80 +1,5 @@
-.aboutgallery {
-  background-color: $white;
-
-  .aboutgallery_cards {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 55px;
-    margin-bottom: 55px;
-  }
-}
-
-.accordion__section {
-  display: flex;
-  flex-direction: column;
-}
-
-.accordion {
-  background-color: $color-2;
-  color: $white;
-  cursor: pointer;
-  padding: 18px;
-  display: flex;
-  align-items: center;
-  border: none;
-  border-radius: 5px;
-  width: 1023px;
-  height: 53px;
-  margin: 0 auto;
-}
-
-p.accordion__title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  text-align: left;
-}
-
-.accordion__icon {
-  margin-left: auto;
-  transition: transform 0.5s ease;
-  width: 25px;
-  color: $white;
-
-}
-
-.rotate {
-  transform: rotate(90deg);
-}
-
-.accordion__content {
-  background-color: white;
-  overflow: hidden;
-  transition: max-height 0.5s ease;
-  margin: 0 auto;
-  border-radius: 2px solid black;
-  height: 150px;
-}
-
-.accordion__text {
-  font-family: "Montserrat", sans-serif;
-  color: $color-2;
-  width: 990px;
-  height: 80px;
-  background-color: #F6F6F6;
-  border-radius: 0px 0px 20px 20px;
-  font-weight: 400;
-  font-size: 20px;
-  padding: 18px;
-}
-
 .aboutlogo {
   @include verticalCenter;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
   margin-bottom: 40px;
   width: 1240px;
   height: 223px;
@@ -84,17 +9,49 @@ p.accordion__title {
 
 }
 
-@media (max-width:768px) {
-  .aboutgallery {
-    width: 335px;
+.aboutgallery_cards {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 55px;
+}
+
+
+.collapsible {
+  width: 100%;
+  background-color: $color-2;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+
+  &_encadrement {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
   }
-  .accordion {
-    width: 335px;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
-  }
-  .section_collapse {
-    margin-left: 0;
-    margin-right: 0;
+
+  &_p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: $color-2;
   }
 }
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+
+
