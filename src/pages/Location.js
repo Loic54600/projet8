@@ -4,6 +4,7 @@ import Navigation from '../components/global/Navigation';
 import Footer from '../components/global/Footer';
 import Profil from '../components/location/Profil';
 import Tag from '../components/location/Tag';
+import Card from '../components/location/Card';
 
 import logements from "../../src/datas/logement.json";
 import Carrousel from '../components/location/Carrousel';
@@ -27,7 +28,7 @@ const Location = () => {
                     <Profil logement={getLogement()} />
                     <Tag logement={getLogement()} />
                     <Rate logement={getLogement()} />
-                    {/*<Card logement={getLogement()}/> */}
+                    <Card logement={getLogement()}/> 
                 </section>
             </main>
             <Footer />

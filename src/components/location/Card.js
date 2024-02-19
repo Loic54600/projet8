@@ -1,36 +1,13 @@
 import React from 'react';
-import Accordion from "../../components/about/Accordion";
-import Logements from "../../../src/datas/logement.json";
+import Test from '../about/Test';
 
-const Card = ({logement}) => {
-    return (
-        <section className="aboutgallery">
-        <div className="aboutgallery_cards">
-          {Logements.map((logement) => {
-            return (
-              <div className="App" key={logement.id} >
-                <Accordion
-                  title= "Description"
-                  content={logement.description}
-                />
-              </div> 
-            );
-          })}
-        </div>
-        <div className="aboutgallery_cards">
-          {Logements.map((logement) => {
-            return (
-              <div className="App" key={logement.id} >
-                <Accordion
-                  title= "Equipements"
-                  content={logement.equipement }
-                />
-              </div> 
-            );
-          })}
-        </div>
-      </section>
-    );
+const Card = ({ logement }) => {
+  return (
+    <div>
+      <Test title="Description" content="{logement.description}" />
+      <Test title="Equipements" content="{logement.equipements}" />
+    </div>
+  );
 };
 
 export default Card;

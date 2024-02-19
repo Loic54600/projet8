@@ -1,6 +1,9 @@
 import React from 'react';
 import Collapses from "../../../src/datas/collapses.json";
+import Test from './Test';
 
+
+/*Script*/
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -18,6 +21,7 @@ for (i = 0; i < coll.length; i++) {
 
 const Collapse = () => {
   return (
+    
     <section className="section_collapse">
       <section className="section_logo">
         <div className="aboutlogo" alt="montagne">
@@ -26,12 +30,8 @@ const Collapse = () => {
       <section className="aboutgallery_cards">
         {Collapses.map((Collapse) => {
           return (
-            <div className="collapsible_encadrement">
-              <button type="button" class="collapsible">{Collapse.title}</button>
-              <div className="content" key={Collapse.id}>
-                <p className="collapsible_p">{Collapse.content}</p>
-              </div>
-            </div>
+
+            <Test  title = "{Collapse.title}" content ="{Collapse.content}"/> 
           );
         })}
       </section>
