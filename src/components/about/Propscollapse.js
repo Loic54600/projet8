@@ -1,3 +1,6 @@
+import flech from "../../assets/img/carrousel/flech-top.png";
+
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -16,10 +19,11 @@ for (i = 0; i < coll.length; i++) {
 const Propscollapse = ({ title, content }) => {
     return (
         <div>
-            <button type="button" class="collapsible">{ title }</button>
+            <button type="button" class="collapsible">{title}</button>
             <div className="content">
-                <p className="collapsible_p">{ content }</p>
+                <p className="collapsible_p">{content}</p>
             </div>
+            <img className="flech" alt="fleche" src={flech} />
         </div>
     );
 }

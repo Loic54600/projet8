@@ -1,11 +1,12 @@
 import React from 'react';
-import Test from "../location/Test"
 
-function Tag({logement}) {
+function Tag({ logement }) {
 
     return (
-        <Test title = {logement.tags} /> )
-
+        <div className="tag">
+            <p className="element">{logement.tags[1]} </p>
+        </div>
+        )
 }
 
 export default Tag;

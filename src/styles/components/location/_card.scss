@@ -89,37 +89,3 @@
         margin: 0;
     }
 }
-
-.accord_collapse {
-    display: flex;
-    margin-left: 315px;
-    gap: 90px;
-}
-
-.accord {
-    background-color: $color-2;
-    border-radius: 20px;
-    width: 582px;
-}
-
-.accordion_content {
-    background-color: #f5f5f5;
-    height: 100px;
-    color: $color-2;
-    font-size: 16px;
-}
-
-.accordion_title {
-    font-family: "Montserrat", sans-serif;
-    list-style-type: none;
-    cursor: pointer;
-    color: $white;
-    font-size: 18px;
-    font-weight: 700;
-    /* taille / */
-    padding: 15px 15px 15px 15px;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M23.024 11.263l-7.024 7.023-7.022-7.023-3.091 3.090 8.569 8.569c0.413 0.413 0.961 0.64 1.545 0.64s1.133-0.228 1.545-0.64l8.569-8.569-3.091-3.090z' fill='%23555555'/%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: right 10px top 10px;
-    background-size: 40px;
-}

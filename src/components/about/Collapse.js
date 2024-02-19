@@ -3,6 +3,7 @@ import Collapses from "../../../src/datas/collapses.json";
 import Propscollapse from './Propscollapse';
 
 
+
 const Collapse = () => {
   return (
     

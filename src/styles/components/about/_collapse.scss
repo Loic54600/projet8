@@ -17,7 +17,6 @@
   margin-bottom: 55px;
 }
 
-
 .collapsible {
   width: 100%;
   background-color: $color-2;
@@ -44,4 +43,11 @@
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+}
+
+.flech {
+  width: 40px;
+  cursor: pointer;
+  margin-left: -75px;
+  margin-top: 20px;
 }
