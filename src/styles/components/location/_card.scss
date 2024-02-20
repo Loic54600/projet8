@@ -5,10 +5,9 @@
 
     &_element {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         width: 1240px;
-        height: 120px;
         margin-top: 20px;
     }
 }
@@ -60,6 +59,20 @@
     }
 }
 
+/*Partie star*/
+.rate-comp {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+}
+
+.star {
+    width: 36px;
+    height: 36px;
+}
+
+
 /*partie tag*/
 .tag-star {
     display: flex;
@@ -73,12 +86,13 @@
 
     .element {
         font-size: 14px;
+        font-weight: 500;
         background-color: $color-2;
-        padding: 20px;
         height: 25px;
-        width: 115px;
+        width: 130px;
         border-radius: 20px;
         color: $white;
+        cursor: pointer;
     }
 
     p.element {
@@ -88,4 +102,34 @@
         justify-content: center;
         margin: 0;
     }
+}
+
+@media screen and (max-width:1240px) {}
+
+
+@media screen and (max-width:768px) {
+
+    .title {
+        &_h2 {
+            width: 335px;
+            height: 46px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        &_p {
+            width: 323px;
+            height: 22px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+
+        .rate-comp {
+            width: 100px;
+            height: 20px;
+        }
+
+    }
+
 }

@@ -5,7 +5,7 @@ const Card = ({ logement }) => {
   return (
     <div>
       <Test title="Description" content={logement.description} />
-      <Test title="Equipements" content={logement.equipements} />
+      <Test title="Equipements" content={logement.equipments} />
     </div>
   );
 };

@@ -9,6 +9,7 @@ import Carrousel from '../components/location/Carrousel';
 import Rate from '../components/location/Rate';
 
 import logements from "../../src/datas/logement.json";
+import Localisation from '../components/location/Localisation';
 
 
 
@@ -25,7 +26,8 @@ const Location = () => {
             <Navigation />
             <main>
                 <Carrousel logement={getLogement()} />
-                <section>
+                <section className="detail_element">
+                    <Localisation logement={getLogement()} />
                     <Profil logement={getLogement()} />
                     <Tag logement={getLogement()} />
                     <Rate logement={getLogement()} />
