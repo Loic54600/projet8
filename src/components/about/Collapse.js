@@ -15,7 +15,7 @@ const Collapse = () => {
       <section className="aboutgallery_cards">
         {Collapses.map((Collapse) => {
           return (
-            <Propscollapse title = {Collapse.title} content ={Collapse.content}/> 
+            <Propscollapse title = {Collapse.title} content ={Collapse.content} key ={Collapse.id}/> 
           );
         })}
       </section>

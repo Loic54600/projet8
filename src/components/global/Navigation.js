@@ -10,9 +10,7 @@ const Navigation = () => {
     return (
         <header>
             <nav className="navbar">
-                <NavLink to="/">
                     <img className="img_kasa" alt="kasa" src={Kasa} />
-                </NavLink>
                 <ul className="ul_nav">
                     <NavLink to="/">
                         <div className="ul_title">Accueil</div>

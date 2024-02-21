@@ -1,14 +1,18 @@
 /*secion_element*/
 .detail_element {
     display: flex;
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     margin-top: 20px;
     margin-bottom: 20px;
     flex-direction: row;
     justify-content: space-between;
 
 }
-
+.logement_view {
+    max-width: 1240px;
+    margin: 0 auto;
+}
 .profil_logement {
     display: flex;
     flex-direction: column;
@@ -17,7 +21,6 @@
 }
 
 .title {
-    width: 635px;
     margin-bottom: 10px;
 
     &_h2 {
@@ -41,7 +44,6 @@
         margin: 0;
         padding: 0;
         font-size: 18px;
-        width: 200px;
     }
 
 }
@@ -56,7 +58,7 @@
         display: flex;
         flex-direction: column;
     }
- 
+
 
     &_host {
         width: 64px;
@@ -107,8 +109,7 @@
 .rate-comp {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    width: 200px;
+    justify-content: flex-start;
     height: 40px;
 }
 
@@ -120,16 +121,18 @@
 /*collapse*/
 .collapse_logement {
     margin-bottom: 30px;
+    .propscollapse {
+     padding: 0 50px;
+    }
 }
 
 
 @media screen and (max-width:1240px) {
     .detail_element {
         display: flex;
-        width: 768px;
     }
+
     .title {
-        width: 335px;
         height: 50px;
 
         &_h2 {
@@ -144,7 +147,6 @@
         }
 
         .rate-comp {
-            width: 100px;
             height: 20px;
         }
 
@@ -156,22 +158,21 @@
         display: flex;
         flex-direction: column;
     }
+
     .profil_tag {
-        width: 370px;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+        justify-content: space-between;
 
     }
-    .profil_logement {
-        width: 370px;
+
+    .tag {
+        height: 80px;
     }
-.tag {
-    width: 335px;
-    height: 80px;
-}
+
     .title {
-        width: 335px;
+
         height: 50px;
 
         &_h2 {
@@ -185,11 +186,16 @@
             font-weight: 500;
         }
 
-        .rate-comp {
-            width: 100px;
-            height: 20px;
-        }
-
     }
 
+    .rate-comp {
+        display: flex;
+        
+        height: 20px;
+        justify-content: flex-start;
+
+    }
+.logement_view {
+    padding: 0 20px;
+}
 }

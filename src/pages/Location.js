@@ -24,7 +24,7 @@ const Location = () => {
     return (
         <div className="location">
             <Navigation />
-            <main>
+            <main className="logement_view">
                 <Carrousel logement={getLogement()} />
                 <section className="detail_element">
                     <div className="profil_logement">

@@ -14,7 +14,9 @@
   justify-content: space-around;
   flex-direction: column;
   gap: 30px;
+  margin: 0 auto;
   margin-bottom: 55px;
+  max-width: 1240px;
 }
 
 .collapsible {
@@ -52,3 +54,10 @@
   margin-top: 20px;
 }
 
+@media screen and (max-width:768px) {
+
+  .aboutgallery_cards {
+    padding: 0 20px;
+  }
+  
+}

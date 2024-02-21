@@ -1,10 +1,10 @@
 .gallery {
     @include verticalCenter;
-    display: flex;
     margin: 0 auto;
     background-color: #F6F6F6;
     border-radius: 20px;
     margin-bottom: 20px;
+    max-width: 1240px;
 
     &_article {
         position: relative;
@@ -30,7 +30,7 @@
         width: 100%;
         padding: 30px;
         height: 90px;
-        background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)); 
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
         border-radius: 20px;
     }
 
@@ -51,7 +51,7 @@
 
 @media screen and (max-width:1240px) {
     .gallery {
-        &_encadrement  {
+        &_encadrement {
             padding: 20px;
 
             a {
@@ -70,11 +70,12 @@
 @media screen and (max-width:768px) {
 
     .gallery {
-        width: 350px;
         background-color: white;
-        .gallery_article{
-        width: 335px;
-        } 
+
+        .gallery_article {
+            width: 100%;
+
+        }
 
         &_title {
             font-size: 15px;
@@ -82,7 +83,8 @@
 
         &_encadrement a {
             width: 100%;
+            margin: 25px 0;
         }
 
-    }  
+    }
 }
