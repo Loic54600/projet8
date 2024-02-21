@@ -46,9 +46,17 @@
 
 }
 
+
 .profil {
     display: flex;
     justify-content: space-between;
+    column-gap: 20px;
+
+    &_tag {
+        display: flex;
+        flex-direction: column;
+    }
+ 
 
     &_host {
         width: 64px;
@@ -72,6 +80,7 @@
     height: 30px;
     display: flex;
     gap: 20px;
+    margin-top: 10px;
 
     .element {
         font-size: 14px;
@@ -98,6 +107,7 @@
 .rate-comp {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     width: 200px;
     height: 40px;
 }
@@ -106,6 +116,12 @@
     width: 24px;
     height: 24px;
 }
+
+/*collapse*/
+.collapse_logement {
+    margin-bottom: 30px;
+}
+
 
 @media screen and (max-width:1240px) {
     .detail_element {

@@ -36,7 +36,9 @@ const Location = () => {
                         <Rate logement={getLogement()} />
                     </div>
                 </section>
-                <Card logement={getLogement()}/>
+                <section className="collapse_logement">
+                    <Card logement={getLogement()} />
+                </section>
             </main>
             <Footer />
         </div>
