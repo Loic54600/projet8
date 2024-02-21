@@ -3,7 +3,7 @@ import Test from '../about/Propscollapse';
 
 const Card = ({ logement }) => {
   return (
-    <div>
+    <div className="card_logement">
       <Test title="Description" content={logement.description} />
       <Test title="Equipements" content={logement.equipments} />
     </div>

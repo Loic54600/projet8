@@ -18,7 +18,7 @@ for (i = 0; i < coll.length; i++) {
 
 const Propscollapse = ({ title, content }) => {
     return (
-        <div>
+        <div className="propscollapse">
             <button type="button" class="collapsible">{title}</button>
             <div className="content">
                 <p className="collapsible_p">{content}</p>

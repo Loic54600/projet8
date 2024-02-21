@@ -1,26 +1,31 @@
 /*secion_element*/
-.detail {
-    margin-left: 0;
-    margin-right: 0;
+.detail_element {
+    display: flex;
+    width: 1240px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    justify-content: space-between;
 
-    &_element {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 1240px;
-        margin-top: 20px;
-    }
+}
+
+.profil_logement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .title {
+    width: 635px;
+    margin-bottom: 10px;
+
     &_h2 {
         font-family: "Montserrat", sans-serif;
         color: $color-2;
-        font-size: 35px;
+        font-size: 36px;
         font-weight: 500;
-        margin-bottom: 10px;
-        margin: 0 auto;
-        height: 51px;
+        margin: 0;
     }
 
     &_h3 {
@@ -28,8 +33,6 @@
         color: $color-2;
         margin-right: 15px;
         font-size: 18px;
-        width: 93px;
-        height: 52px;
     }
 
     &_p {
@@ -39,15 +42,11 @@
         padding: 0;
         font-size: 18px;
         width: 200px;
-        height: 26px;
-
     }
 
 }
 
 .profil {
-    margin-left: 0;
-    margin-right: 0;
     display: flex;
     justify-content: space-between;
 
@@ -57,19 +56,6 @@
         border-radius: 50%;
 
     }
-}
-
-/*Partie star*/
-.rate-comp {
-    display: flex;
-    align-items: center;
-    width: 200px;
-    height: 40px;
-}
-
-.star {
-    width: 36px;
-    height: 36px;
 }
 
 
@@ -82,17 +68,21 @@
 
 .tag {
     display: flex;
+    flex-wrap: wrap;
+    height: 30px;
+    display: flex;
     gap: 20px;
 
     .element {
         font-size: 14px;
         font-weight: 500;
         background-color: $color-2;
-        height: 25px;
-        width: 130px;
+        height: 30px;
         border-radius: 20px;
         color: $white;
         cursor: pointer;
+        padding: 0 10px;
+
     }
 
     p.element {
@@ -104,26 +94,80 @@
     }
 }
 
-@media screen and (max-width:1240px) {}
+/*Partie star*/
+.rate-comp {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+}
 
+.star {
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width:1240px) {
+    .detail_element {
+        display: flex;
+        width: 768px;
+    }
+    .title {
+        width: 335px;
+        height: 50px;
+
+        &_h2 {
+
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        &_p {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .rate-comp {
+            width: 100px;
+            height: 20px;
+        }
+
+    }
+}
 
 @media screen and (max-width:768px) {
+    .detail_element {
+        display: flex;
+        flex-direction: column;
+    }
+    .profil_tag {
+        width: 370px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
 
+    }
+    .profil_logement {
+        width: 370px;
+    }
+.tag {
+    width: 335px;
+    height: 80px;
+}
     .title {
+        width: 335px;
+        height: 50px;
+
         &_h2 {
-            width: 335px;
-            height: 46px;
+
             font-size: 18px;
             font-weight: 500;
         }
 
         &_p {
-            width: 323px;
-            height: 22px;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 500;
         }
-
 
         .rate-comp {
             width: 100px;

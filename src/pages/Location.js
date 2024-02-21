@@ -27,12 +27,16 @@ const Location = () => {
             <main>
                 <Carrousel logement={getLogement()} />
                 <section className="detail_element">
-                    <Localisation logement={getLogement()} />
-                    <Profil logement={getLogement()} />
-                    <Tag logement={getLogement()} />
-                    <Rate logement={getLogement()} />
-                    <Card logement={getLogement()}/> 
+                    <div className="profil_logement">
+                        <Localisation logement={getLogement()} />
+                        <Tag logement={getLogement()} />
+                    </div>
+                    <div className="profil_tag">
+                        <Profil logement={getLogement()} />
+                        <Rate logement={getLogement()} />
+                    </div>
                 </section>
+                <Card logement={getLogement()}/>
             </main>
             <Footer />
         </div>
