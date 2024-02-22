@@ -20,6 +20,9 @@
 }
 
 .collapsible {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   background-color: $color-2;
   border-radius: 5px;
@@ -48,10 +51,13 @@
 }
 
 .flech {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
   width: 34px;
   cursor: pointer;
-  margin-left: -75px;
-  margin-top: 20px;
+
+  
 }
 
 @media screen and (max-width:768px) {
