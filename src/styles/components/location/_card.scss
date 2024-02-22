@@ -9,10 +9,12 @@
     justify-content: space-between;
 
 }
+
 .logement_view {
     max-width: 1240px;
     margin: 0 auto;
 }
+
 .profil_logement {
     display: flex;
     flex-direction: column;
@@ -122,7 +124,15 @@
 .collapse_logement {
     margin-bottom: 30px;
     .propscollapse {
-     padding: 0 50px;
+        width: 45%;
+    }
+
+    .card_logement {
+        display: flex;
+        justify-content: space-between;
+    }
+    .collapsible_p {
+        display: flex;
     }
 }
 
@@ -190,12 +200,13 @@
 
     .rate-comp {
         display: flex;
-        
+
         height: 20px;
         justify-content: flex-start;
 
     }
-.logement_view {
-    padding: 0 20px;
-}
+
+    .logement_view {
+        padding: 0 20px;
+    }
 }

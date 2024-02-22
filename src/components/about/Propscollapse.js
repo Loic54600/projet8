@@ -23,5 +23,4 @@ const Propscollapse = ({ title, content }) => {
     );
 }
 
-
 export default Propscollapse;

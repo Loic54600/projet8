@@ -1,13 +1,31 @@
 import React from 'react';
-import Test from '../about/Propscollapse';
+import Collapse from '../about/Propscollapse';
 
 const Card = ({ logement }) => {
   return (
-    <div className="card_logement">
-      <Test title="Description" content={logement.description} />
-      <Test title="Equipements" content={logement.equipments} />
-    </div>
+    <section className="card_logement">
+      <Collapse title="Description" content={logement.description} />
+
+      <Collapse title="Équipements">
+        <ul className="equipments-content">
+          {logement.equipments.map((equipment, id) => {
+            return (
+              <li key={id}>{equipment}</li>
+            )
+          })}
+        </ul>
+      </Collapse>
+
+
+
+
+
+
+
+
+    </section>
   );
 };
 
 export default Card;
+
