@@ -81,7 +81,6 @@
 .tag {
     display: flex;
     flex-wrap: wrap;
-    height: 30px;
     display: flex;
     gap: 20px;
     margin-top: 10px;
@@ -177,10 +176,6 @@
 
     }
 
-    .tag {
-        height: 80px;
-    }
-
     .title {
 
         height: 50px;
@@ -208,5 +203,13 @@
 
     .logement_view {
         padding: 0 20px;
+    }
+
+    .card_logement {
+        flex-direction: column;
+        gap: 30px;
+        .propscollapse {
+            width: 100%;
+        }
     }
 }

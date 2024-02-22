@@ -15,14 +15,7 @@ const Card = ({ logement }) => {
           })}
         </ul>
       </Collapse>
-
-
-
-
-
-
-
-
+      
     </section>
   );
 };
