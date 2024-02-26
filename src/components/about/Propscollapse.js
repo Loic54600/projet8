@@ -17,7 +17,7 @@ const Propscollapse = ({ title, content }) => {
         }
 
         setIsOpen(!isOpen);
-        setflech(isOpen ? Rotate : { transform: "rotate(0deg)", transition: "all 0.3s linear" });
+        setflech(isOpen ? Rotate : { transform: "rotate(0deg)"});
     };
 
     {/*rotation de la fleche */ }

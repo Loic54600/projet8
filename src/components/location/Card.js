@@ -6,21 +6,12 @@ const Card = ({ logement }) => {
     <section className="card_logement">
       <Collapse title="Description" content={logement.description} />
 
-      <Collapse title="Équipements">
-
-        {logement.equipments.map((equipment, id) => {
-          return (
-            <ul className="equipments-content">
-              <li key={id} content={equipment} />
-            </ul>
-          )
-        })}
-
-      </Collapse>
+      <Collapse title="Équipements" content={logement.equipments.map((equipment, id) => {
+          return (<span key={id}>{equipment}</span>)
+      })}/>
 
     </section>
   );
 };
 
 export default Card;
-

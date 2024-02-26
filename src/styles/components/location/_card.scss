@@ -132,6 +132,7 @@
     }
     .collapsible_p {
         display: flex;
+        flex-direction: column;
     }
 }
 

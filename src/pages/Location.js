@@ -7,6 +7,7 @@ import Tag from '../components/location/Tag';
 import Card from '../components/location/Card';
 import Carrousel from '../components/location/Carrousel';
 import Rate from '../components/location/Rate';
+import Error from "../pages/Error"
 
 import logements from "../../src/datas/logement.json";
 import Localisation from '../components/location/Localisation';
@@ -21,6 +22,9 @@ function getLogement() {
 }
 
 const Location = () => {
+    if(getLogement() === undefined) {
+        return <Error />
+    }
     return (
         <div className="location">
             <Navigation />
