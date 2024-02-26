@@ -1,9 +1,12 @@
 import flech from "../../assets/img/carrousel/flech-top.png";
 import { useState } from "react";
 
+
+
 const Propscollapse = ({ title, content }) => {
 
     const openCollaspe = (e) => {
+
         const button = e.currentTarget;
         button.classList.toggle("active");
         const content = button.nextElementSibling;
@@ -12,18 +15,18 @@ const Propscollapse = ({ title, content }) => {
         } else {
             content.style.display = "block";
         }
+
         setIsOpen(!isOpen);
-
-        setflech(isOpen ? Rotate : { transform: "rotate(0deg)", transition: "all 0.15s linear" });
-
+        setflech(isOpen ? Rotate : { transform: "rotate(0deg)", transition: "all 0.3s linear" });
     };
+
     {/*rotation de la fleche */ }
     const Rotate = {
         transform: "rotate(180deg)",
     };
 
-    const [isOpen, setIsOpen] = useState(false);
-    const [idflech, setflech] = useState(Rotate);
+const [isOpen, setIsOpen] = useState(false);
+const [idflech, setflech] = useState(Rotate);
 
 
     return (

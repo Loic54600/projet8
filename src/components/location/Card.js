@@ -7,15 +7,17 @@ const Card = ({ logement }) => {
       <Collapse title="Description" content={logement.description} />
 
       <Collapse title="Équipements">
-        <ul className="equipments-content">
-          {logement.equipments.map((equipment, id) => {
-            return (
-              <li key={id}>{equipment}</li>
-            )
-          })}
-        </ul>
+
+        {logement.equipments.map((equipment, id) => {
+          return (
+            <ul className="equipments-content">
+              <li key={id} content={equipment} />
+            </ul>
+          )
+        })}
+
       </Collapse>
-      
+
     </section>
   );
 };
