@@ -12,9 +12,6 @@ import Error from "../pages/Error"
 import logements from "../../src/datas/logement.json";
 import Localisation from '../components/location/Localisation';
 
-
-
-
 function getLogement() {
     const logementID = window.location.pathname.replace('/logement/', '');
     const logement = logements.find((logement) => { return logement.id === logementID })
@@ -48,6 +45,4 @@ const Location = () => {
         </div>
     );
 };
-
-
 export default Location;
